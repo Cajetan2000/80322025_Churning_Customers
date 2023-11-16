@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <nav class="light-green lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Customer Churn Prediction</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center light-blue-text">We cherish your customers</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict your customers churn!
+          <br>
+        </h5>
+      </div>
+
+      <div class="row">
+        <form action='/predict' method="post" class="col s12">
+          <div class="row">
+            <div class="input-field col s4">
+              <label for="_name"><b>Gender</b></label>
+              <br>
+              <input id="_name" name="gender" placeholder='Gender' type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+
+              <label for="last_name"><b>SeniorCitizen </b></label>
+              <br>
+              <input id="last_name" name='SeniorCitizen' placeholder='SeniorCitizen' type="text" class="validate">
+
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Partner</b></label>
+              <br>
+              <input id="_name" name='Partner' placeholder='Partner' type="text" class="validate">
+            </div>
+            <div class="input-field col s4">
+              <label for="_name"><b>Dependents</b></label>
+              <br>
+              <input id="_name" name='Dependents', placeholder='Dependents', type="text" class="validate">
+            </div>
+
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Tenure</b></label>
+              <br>
+              <input id="_name" name='tenure' placeholder='tenure' type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="first_name"><b> PhoneService</b></label>
+              <br>
+              <input placeholder= 'PhoneService' name= 'PhoneService' id="first_name" type="text"
+                class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="first_name"><b>MultipleLines</b></label>
+              <br>
+              <input placeholder='MultipleLines' name='MultipleLines' id="first_name" type="text"
+                class="validate">
+            </div>
+
+
+            <div class="input-field col s4">
+              <label for="first_name"><b>InternetService</b></label>
+              <br>
+              <input placeholder='InternetService' name='InternetService' id="first_name" type="text"
+                class="validate">
+            </div>
+
+
+            <div class="input-field col s4">
+              <label for="first_name"><b>OnlineSecurity</b></label>
+              <br>
+              <input placeholder= 'OnlineSecurity' name='OnlineSecurity' id="first_name" type="text"
+                class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="first_name"><b>OnlineBackup</b></label>
+              <br>
+              <input placeholder='OnlineBackup' name='OnlineBackup' id="first_name" type="text"
+                class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="first_name"><b>DeviceProtection</b></label>
+              <br>
+              <input placeholder='DeviceProtection' name='DeviceProtection' id="first_name" type="text"
+                class="validate">
+            </div>
+
+
+            <div class="input-field col s4">
+              <label for="first_name"><b>TechSupport</b></label>
+              <br>
+              <input placeholder='TechSupport' name='TechSupport' id="first_name" type="text"
+                class="validate">
+            </div>
+            
+
+            <div class="input-field col s4">
+              <label for="_name"><b>StreamingTV</b></label>
+              <br>
+              <input id="_name" name='StreamingTV' placeholder='StreamingTV' type="text" class="validate">
+            </div>   
+            
+            
+            <div class="input-field col s4">
+              <label for="_name"><b>StreamingMovies</b></label>
+              <br>
+              <input id="_name" name='StreamingMovies' placeholder='StreamingMovies' type="text" class="validate">
+            </div>
+            
+            <div class="input-field col s4">
+              <label for="_name"><b>Contract</b></label>
+              <br>
+              <input id="_name" name='Contract' placeholder='Contract' type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>PaperlessBilling</b></label>
+              <br>
+              <input id="_name" name='PaperlessBilling' placeholder='PaperlessBilling' type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>PaymentMethod</b></label>
+              <br>
+              <input id="_name" name='PaymentMethod' placeholder='PaymentMethod' type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>MonthlyCharges</b></label>
+              <br>
+              <input id="_name" name='MonthlyCharges' placeholder='MonthlyCharges' type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>TotalCharges</b></label>
+              <br>
+              <input id="_name" name='TotalCharges' placeholder='TotalCharges' type="text" class="validate">
+            </div>
+
+            
+
+          </div>
+
+          <div class="row center">
+
+            <button type="submit" class="btn-large waves-effect waves-light light-blue">Predict Probability</button>
+          </div>
+        </form>
+      </div>
+
+      <br>
+      {{pred}}<br>
+
+    </div>
+  </div>
+
+
+  <br><br>
+  </div>
+  </div>>
+
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">Predicting customers churn</p>
+
+
+        </div>
+        <div class="col 18 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">cajetan.songwae@ashesi.edu.gh</a></li>
+            
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>
